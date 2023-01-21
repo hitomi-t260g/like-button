@@ -20,7 +20,7 @@ function App() {
 function LikeButton() {
   const [count, setCount] = useState<num>(999);
   const handleClick:onClick = () => {
-    setCount(prevCount => prevCount + 1);
+    setCount((prevCount: num) => prevCount + 1);
   };
   return <span className="likeButton" onClick={handleClick}>♥ {count}</span>;
 }
