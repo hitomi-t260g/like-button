@@ -22,7 +22,7 @@ function LikeButton() {
   const handleClick:onClick = () => {
     setCount((prevCount: num) => prevCount + 1);
   };
-  return <span className="likeButton" onClick={handleClick}>♥ {count}</span>;
+  return <span className="likeButton" onClick={handleClick}>&hearts; {count}</span>;
 }
 
 export default App;
